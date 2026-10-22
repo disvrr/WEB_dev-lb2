@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lb2_CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h3 {
+            color: #ca5f9c;
+            text-align: center;
+        }
+
+        .task-checkbox {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #3a0640;
+            border-radius: 4px;
+            background-color: white;
+            cursor: pointer;
+            vertical-align: middle;
+            transition: background-color 0.3s;
+        }
+
+        .task-checkbox:checked {
+            background-color: #b70ea9;
+            border-color: #b70ea9;
+        }
+
+        .task-checkbox:checked::after {
+            display: block;
+            color: white;
+            text-align: center;
+            line-height: 16px;
+            font-size: 15px;
+        }
+
+        .task-checkbox+label {
+            color: white;
+            cursor: pointer;
+        }
+
+        a[target="_blank"] {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>Laborator work 2</h3>
+        <nav class="navigation">
+            <a href="#tasks">Tasks</a>
+            <a href="#flexbox">Flexbox</a>
+        </nav>
+    </header>
+    <main>
+        <section id="tasks">
+            <h2>Tasks</h2>
+            <div class="task-list">
+                <input class="task-checkbox" type="checkbox" id="task1">
+                <label for="task1">1.Додати на сторінку кілька елементів checkbox, оформлення яких залежить від стану.
+                </label>
+            </div>
+            <div>
+                <input class="task-checkbox" type="checkbox" id="task2">
+                <label for="task2">2.Додати на сторінку контейнер з елементами, розміщеними згідно з малюнком.</label>
+            </div>
+        </section>
+        <section id="flexbox">
+            <h2>Flexbox</h2>
+
+            <div class="flex-container">
+                <div class="square">1</div>
+                <div class="square">2</div>
+                <div class="square">3</div>
+                <div class="square">4</div>
+                <div class="square">5</div>
+                <div class="square">6</div>
+                <div class="square">7</div>
+                <div class="square">8</div>
+
+                <div class="long-item">9</div>
+            </div>
+        </section>
+        <section id="sources">
+            <p>
+                
+                Корисне посилання:
+                <a href="https://github.com/disvrr/WEB_dev-lb2" target="_blank">
+                    Навчитися CSS
+                </a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Diana Ivakhnenko</p>
+    </footer>
+</body>
+
+</html>
