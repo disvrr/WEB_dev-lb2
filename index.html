@@ -2,14 +2,22 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Lb2_CSS</title>
 
     <link rel="stylesheet" href="style.css">
 
     <style>
-        h3 {
-            color: #ca5f9c;
-            text-align: center;
+        .task-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 0 auto;
+             width: fit-content;
+            background: linear-gradient(60deg, #e702ee, #1d0238);
+            border-radius: 4px;
+          padding: 20px;
         }
 
         .task-checkbox {
@@ -50,23 +58,28 @@
 
 <body>
     <header>
-        <h3>Laborator work 2</h3>
+        <h3  style = "color: #ca5f9c; text-align: center">Laborator work 2</h3> <!--inline-->
         <nav class="navigation">
             <a href="#tasks">Tasks</a>
             <a href="#flexbox">Flexbox</a>
+            <a href="#sources">Sources</a>
         </nav>
     </header>
     <main>
         <section id="tasks">
             <h2>Tasks</h2>
             <div class="task-list">
-                <input class="task-checkbox" type="checkbox" id="task1">
-                <label for="task1">1.Додати на сторінку кілька елементів checkbox, оформлення яких залежить від стану.
-                </label>
-            </div>
-            <div>
-                <input class="task-checkbox" type="checkbox" id="task2">
-                <label for="task2">2.Додати на сторінку контейнер з елементами, розміщеними згідно з малюнком.</label>
+                <div>
+                    <input class="task-checkbox" type="checkbox" id="task1">
+                    <label for="task1">1.Додати на сторінку кілька елементів checkbox, оформлення яких залежить від
+                        стану.
+                    </label>
+                </div>
+                <div>
+                    <input class="task-checkbox" type="checkbox" id="task2">
+                    <label for="task2">2.Додати на сторінку контейнер з елементами, розміщеними згідно з
+                        малюнком.</label>
+                </div>
             </div>
         </section>
         <section id="flexbox">
@@ -87,10 +100,9 @@
         </section>
         <section id="sources">
             <p>
-                
-                Корисне посилання:
+                Посилання на репозиторій:
                 <a href="https://github.com/disvrr/WEB_dev-lb2" target="_blank">
-                    Навчитися CSS
+                    GitHub
                 </a>
             </p>
         </section>
